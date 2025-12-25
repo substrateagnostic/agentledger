@@ -20,7 +20,7 @@ Organizations deploying AI agents in regulated contexts face emerging accountabi
 - **HIPAA**: Healthcare AI must maintain audit trails with PHI protection
 - **SOC 2**: Service organizations need evidence of AI governance controls
 
-No standardized logging exists. Until now.
+No uniform standardized logging exists. 
 
 ## Quick Start
 
