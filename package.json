@@ -1,0 +1,53 @@
+{
+  "name": "agentledger",
+  "version": "1.0.0",
+  "description": "AI Agent Audit Trail SDK - Compliance-ready logging for regulated industries",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint packages/*/src/**/*.ts --ignore-pattern '**/__tests__/**'",
+    "lint:fix": "eslint packages/*/src/**/*.ts --fix --ignore-pattern '**/__tests__/**'",
+    "typecheck": "tsc --noEmit -p packages/core/tsconfig.json && tsc --noEmit -p packages/openai/tsconfig.json && tsc --noEmit -p packages/cli/tsconfig.json",
+    "clean": "rm -rf packages/*/dist coverage",
+    "demo": "npx ts-node examples/demo/index.ts",
+    "cli": "npx ts-node packages/cli/src/index.ts"
+  },
+  "keywords": [
+    "ai",
+    "audit",
+    "compliance",
+    "finra",
+    "eu-ai-act",
+    "hipaa",
+    "soc2",
+    "logging",
+    "llm",
+    "agent",
+    "langchain",
+    "openai",
+    "anthropic"
+  ],
+  "author": "Alex Galle-From <agallefrom@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexgallefrom/agentledger"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}

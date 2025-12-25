@@ -1,0 +1,56 @@
+{
+  "name": "agentledger-anthropic",
+  "version": "1.0.0",
+  "description": "Anthropic SDK integration for AgentLedger - AI Agent Audit Trail SDK",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "agentledger-core": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@anthropic-ai/sdk": ">=0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "@anthropic-ai/sdk": "^0.39.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "anthropic",
+    "claude",
+    "audit",
+    "compliance",
+    "llm"
+  ],
+  "author": "Alex Galle-From <agallefrom@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexgallefrom/agentledger",
+    "directory": "packages/anthropic"
+  },
+  "bugs": {
+    "url": "https://github.com/alexgallefrom/agentledger/issues"
+  },
+  "homepage": "https://github.com/alexgallefrom/agentledger#readme"
+}

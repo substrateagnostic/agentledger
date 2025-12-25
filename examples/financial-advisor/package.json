@@ -1,0 +1,11 @@
+{
+  "name": "@agentledger/example-financial-advisor",
+  "private": true,
+  "dependencies": {
+    "@agentledger/core": "^1.0.0",
+    "@agentledger/openai": "^1.0.0",
+    "@agentledger/anthropic": "^1.0.0",
+    "openai": "^4.0.0",
+    "@anthropic-ai/sdk": "^0.10.0"
+  }
+}

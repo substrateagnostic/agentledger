@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "regulation": "EU_AI_ACT",
+  "article": "12",
+  "ai_system": {
+    "provider": "demo-org",
+    "system_id": "demo-agent",
+    "version": "1.0.0"
+  },
+  "operation_log": {
+    "session_id": "dc4d69d5-eb3a-4c85-963e-9f798908c496",
+    "start_time": "2025-12-25T08:40:17.271Z",
+    "end_time": "2025-12-25T08:40:18.539Z",
+    "environment": "development",
+    "initiator": {
+      "type": "user",
+      "identifier": "demo-user"
+    }
+  },
+  "traceability": {
+    "total_events": 6,
+    "merkle_root": "caea9bd85e8b1db1272241fe2310e4ee712cebc894e7f67bb076450141a0b867",
+    "chain_integrity": true
+  },
+  "events": [
+    {
+      "event_id": "aae05ab8-5a0f-4c1b-9557-560c066c6c69",
+      "timestamp": "2025-12-25T08:40:17.738Z",
+      "event_type": "model_call",
+      "hash": "d4487f17ab71f05899c50c3597326688c6f7cac9972acaeaef38fb0181a41332",
+      "model": "gpt-4-mock",
+      "provider": "openai",
+      "tokens_used": 65
+    },
+    {
+      "event_id": "f290cb58-66e3-4697-896e-842914a99c1c",
+      "timestamp": "2025-12-25T08:40:17.738Z",
+      "event_type": "decision_point",
+      "hash": "9d7dc93f8388e6f8848b9a5fbafa0f37a096ebf4b8b7aef76b08491ae584a707",
+      "decision_category": "tool_selection",
+      "options_count": 2,
+      "human_review_required": false
+    },
+    {
+      "event_id": "43bddd40-37f4-407d-b13e-c097bb026e63",
+      "timestamp": "2025-12-25T08:40:17.847Z",
+      "event_type": "tool_invocation",
+      "hash": "5dd912518dad7cf5385bb88412a6a4f8764c11d13626792c36935bb754787801"
+    },
+    {
+      "event_id": "78d794b0-45fc-498d-96a5-37102aed1eef",
+      "timestamp": "2025-12-25T08:40:18.065Z",
+      "event_type": "model_call",
+      "hash": "4206ce620c2e45352339ac0cb3282adf599660827b0f83eb58e324d9943d3b8b",
+      "model": "gpt-4-mock",
+      "provider": "openai",
+      "tokens_used": 134
+    },
+    {
+      "event_id": "6316fc07-3092-440d-8a59-772deaf877c2",
+      "timestamp": "2025-12-25T08:40:18.532Z",
+      "event_type": "model_call",
+      "hash": "6cd4112c4f52d1ffa3e705cd1529a4a0d17a6b9f750347ec08daed009fc9b15f",
+      "model": "gpt-4-mock",
+      "provider": "openai",
+      "tokens_used": 212
+    },
+    {
+      "event_id": "86702a9b-663e-4b9d-865c-b32c351721ef",
+      "timestamp": "2025-12-25T08:40:18.532Z",
+      "event_type": "state_snapshot",
+      "hash": "bab14aeb105524ad087a8e2748e77b24429a10ece8284334bfd5ad2a7bb406fa"
+    }
+  ],
+  "compliance_metadata": {
+    "retention_days": 2555,
+    "applicable_frameworks": [
+      "FINRA_4511",
+      "EU_AI_ACT"
+    ],
+    "export_timestamp": "2025-12-25T08:40:18.539Z"
+  }
+}

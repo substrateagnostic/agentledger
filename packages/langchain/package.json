@@ -1,0 +1,56 @@
+{
+  "name": "agentledger-langchain",
+  "version": "1.0.0",
+  "description": "LangChain integration for AgentLedger - AI Agent Audit Trail SDK",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "agentledger-core": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@langchain/core": ">=0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "@langchain/core": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "langchain",
+    "audit",
+    "callback",
+    "compliance",
+    "llm"
+  ],
+  "author": "Alex Galle-From <agallefrom@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexgallefrom/agentledger",
+    "directory": "packages/langchain"
+  },
+  "bugs": {
+    "url": "https://github.com/alexgallefrom/agentledger/issues"
+  },
+  "homepage": "https://github.com/alexgallefrom/agentledger#readme"
+}
